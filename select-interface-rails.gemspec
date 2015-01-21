@@ -6,15 +6,15 @@ Gem::Specification.new do |s|
   s.name        = "select-interface-rails"
   s.version     = SelectInterfaceRails::VERSION
   s.authors     = ["rplauindo"]
-  s.email       = ["TODO: Your email"]
+  s.email       = ["rafaelplaurindo@gmail.com"]
   s.homepage    = "https://github.com/rplaurindo"
-  s.summary     = "TODO: Summary of SelectInterfaceRails."
-  s.description = "TODO: Description of SelectInterfaceRails."
+  s.summary     = "Summary of SelectInterfaceRails."
+  s.description = "Description of SelectInterfaceRails."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 3.2.19"
+  s.add_dependency "rails", "~> 3.2.0"
 
   JUGGERNAUT_REQUIREMENTS = [
     "jquery-rails",
@@ -24,4 +24,5 @@ Gem::Specification.new do |s|
   JUGGERNAUT_REQUIREMENTS.each do |pkg|
     s.add_dependency pkg
   end
+
 end
