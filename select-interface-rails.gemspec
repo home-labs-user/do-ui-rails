@@ -1,15 +1,13 @@
-$:.push File.expand_path("../lib", __FILE__)
+Dir["./", "*/"].each{ |p| $:.unshift File.absolute_path(p) unless $:.include?(File.absolute_path(p)) }
 
-# Maintain your gem's version:
 require "select-interface-rails/version"
 
-# Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "select-interface-rails"
   s.version     = SelectInterfaceRails::VERSION
-  s.authors     = ["TODO: Your name"]
+  s.authors     = ["rplauindo"]
   s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/rplaurindo"
   s.summary     = "TODO: Summary of SelectInterfaceRails."
   s.description = "TODO: Description of SelectInterfaceRails."
 
@@ -17,7 +15,13 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.19"
-  # s.add_dependency "jquery-rails"
 
-  s.add_development_dependency "sqlite3"
+  JUGGERNAUT_REQUIREMENTS = [
+    "jquery-rails",
+    "sass-rails"
+  ]
+
+  JUGGERNAUT_REQUIREMENTS.each do |pkg|
+    s.add_dependency pkg
+  end
 end
