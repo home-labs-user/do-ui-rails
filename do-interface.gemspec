@@ -10,8 +10,9 @@ Gem::Specification.new do |s|
   s.summary     = "Summary of DoInterface."
   s.description = "Description of DoInterface."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
+  s.files         = `git ls-files -z`.split("\x0")
+  s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.require_paths = ["lib"]
 
   # ~> entre a atual informada e uma nova versão na casa imediatamente a esquerda.
   # Ex. ~> 0.1.1 é o mesmo que < 0.2.0, >= 0.1.1. Isso validará 0.1.1, 0.1.1.0, 0.1.1.1, 0.1.2,....
