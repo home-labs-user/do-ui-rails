@@ -5,10 +5,12 @@ require "do/interface/rails/version"
 Gem::Specification.new do |s|
   s.name        = "do-interface-rails"
   s.version     = Do::Interface::Rails::VERSION
-  s.authors     = ["rplauindo"]
-  s.homepage    = "https://github.com/rplaurindo/do-interface-rails"
+  s.authors     = ["home-labs"]
+  s.email       = ["home-labs@outlook.com"]
+  s.homepage    = "https://rubygems.org/gems/do-interface-rails"
   s.summary     = "Summary of DoInterface."
   s.description = "Description of DoInterface."
+  s.license     = "MIT"
 
   s.files         = `git ls-files -z`.split("\x0")
   s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
