@@ -1,4 +1,4 @@
-window.toggleTooltip = (e)->
+window.toggleTooltip = (e) ->
   target = $(e.target)
   # dando problema em na hora de reconhecer o params, pois está reconhecendo como Function
   Singleton.saveState target, 'handler'
@@ -37,7 +37,7 @@ show = ->
   tooltip.addClass "transition-in"
 
 
-window.closeAllTooltips = (e)->
+window.closeAllTooltips = (e) ->
   target = $(e.target)
 
   if !target.is(".tooltip-body") && target.children(".tooltip").length == 0

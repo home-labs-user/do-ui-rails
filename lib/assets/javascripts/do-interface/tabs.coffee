@@ -2,7 +2,7 @@
 #= require "do/helpers/string"
 
 
-window.selectTabOnload = (className)->
+window.selectTabOnload = (className) ->
     list = $("nav ul.tabs")
     items = list.find "li"
     anchors = items.find "a"
@@ -29,13 +29,13 @@ window.selectTabOnload = (className)->
             anchorSearch.removeAttr 'href'
 
 
-selectTab = (handle, className)->
+selectTab = (handle, className) ->
     anchors = $("nav ul.tabs li a")
     anchors.removeClass className
     handle.addClass className
 
 
-showContentOnClick = (e)->
+showContentOnClick = (e) ->
     list = $("nav ul.tabs")
     items = list.find "li"
     container = $("ul.tabs-container")
@@ -44,7 +44,7 @@ showContentOnClick = (e)->
     container.find("li#{id}").show()
 
 
-showContentOnload = (className)->
+showContentOnload = (className) ->
     list = $("nav ul.tabs")
     items = list.find "li"
     container = $("ul.tabs-container")
@@ -80,11 +80,11 @@ showContentOnload = (className)->
     #           content.html data
 
 
-window.tabsInit = (className)->
+window.tabsInit = (className) ->
 
     selectTabOnload className
 
-    $("nav ul.tabs li a").click (e)->
+    $("nav ul.tabs li a").click (e) ->
         selectTab $(this), className
         # aqui vem a lógica de como carregar o conteúdo, se via ajax, por exemplo
         showContentOnClick e
