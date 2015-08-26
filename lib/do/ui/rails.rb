@@ -1,1 +1,1 @@
-require 'do/interface/rails/engine'
+require 'do/ui/rails/engine'

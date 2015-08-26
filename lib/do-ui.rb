@@ -1,1 +1,1 @@
-require "do/interface/rails"
+require "do/ui/rails"
