@@ -1,15 +1,15 @@
 Dir["./", "*/"].each{ |p| $:.unshift File.absolute_path(p) unless $:.include?(File.absolute_path(p)) }
 
-require "do/interface/rails/version"
+require "do/ui/rails/version"
 
 Gem::Specification.new do |s|
-  s.name        = "do-interface-rails"
-  s.version     = Do::Interface::Rails::VERSION
+  s.name        = "do-ui-rails"
+  s.version     = Do::Ui::Rails::VERSION
   s.authors     = ["home-labs"]
   s.email       = ["home-labs@outlook.com"]
-  s.homepage    = "https://rubygems.org/gems/do-interface-rails"
-  s.summary     = "Summary of DoInterface."
-  s.description = "Description of DoInterface."
+  s.homepage    = "https://rubygems.org/gems/do-ui-rails"
+  s.summary     = "Summary of Do UI."
+  s.description = "Description of Do UI."
   s.license     = "MIT"
 
   s.files         = `git ls-files -z`.split("\x0")

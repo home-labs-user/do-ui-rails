@@ -1,8 +1,8 @@
 module Do
-  module Interface
+  module Ui
     module Rails
       class Engine < ::Rails::Engine
-        isolate_namespace Do::Interface::Rails
+        isolate_namespace Do::Ui::Rails
       end
     end
   end
