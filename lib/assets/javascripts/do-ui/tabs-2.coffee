@@ -1,11 +1,6 @@
 #= require "do/helpers/jquery"
 #= require "do/helpers/string"
 
-
-# para testar e melhorar o código
-# /home/rplaurindo/projects/curriculum_selection/app/assets/javascripts/administrative/tabs.coffee
-# /home/rplaurindo/projects/curriculum_selection/app/views/admin/candidates/show.html.haml
-
 window.selectTabOnload = (className) ->
     list = $("nav ul.tabs")
     items = list.find "li"
