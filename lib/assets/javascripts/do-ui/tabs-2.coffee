@@ -28,22 +28,6 @@ window.selectTabOnload = (className) ->
 
             anchorSearch.removeAttr 'href'
 
-
-selectTab = (handle, className) ->
-    anchors = $("nav ul.tabs li a")
-    anchors.removeClass className
-    handle.addClass className
-
-
-showContentOnClick = (e) ->
-    list = $("nav ul.tabs")
-    items = list.find "li"
-    container = $("ul.tabs-container")
-    container.find("li").hide()
-    id = $(e.target).attr 'href'
-    container.find("li#{id}").show()
-
-
 showContentOnload = (className) ->
     list = $("nav ul.tabs")
     items = list.find "li"
@@ -78,13 +62,3 @@ showContentOnload = (className) ->
     #       (data, status, xhr)->
     #         if format == "html"
     #           content.html data
-
-
-window.tabsInit = (className) ->
-
-    selectTabOnload className
-
-    $("nav ul.tabs li a").click (e) ->
-        selectTab $(this), className
-        # aqui vem a lógica de como carregar o conteúdo, se via ajax, por exemplo
-        showContentOnClick e
