@@ -31,7 +31,7 @@ $.fn.wideModal = ->
 
     loadActions()
 
-    url = $(this).data("url")
+    url = params.url;
 
     if url
         format = $(this).data("format")
