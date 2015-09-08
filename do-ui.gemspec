@@ -22,7 +22,6 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'jquery-rails', '~> 3.0'
   s.add_runtime_dependency 'do-rails', '~> 0.0.9'
-  s.add_runtime_dependency 'singleton_js-rails', '~> 0.0.1'
   s.add_runtime_dependency 'basicss-rails', '~> 0.0.7'
 
 end
