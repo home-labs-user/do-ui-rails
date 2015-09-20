@@ -12,16 +12,15 @@ Gem::Specification.new do |s|
   s.description = "Description of Do UI."
   s.license     = "MIT"
 
-  s.files         = `git ls-files -z`.split("\x0")
-  s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  s.require_paths = ["lib"]
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc", "do.gemspec"]
+  s.require_paths = ["lib", "config"]
 
   # ~> entre a atual informada e uma nova versão na casa imediatamente a esquerda.
   # Ex. ~> 0.1.1 é o mesmo que < 0.2.0, >= 0.1.1. Isso validará 0.1.1, 0.1.1.0, 0.1.1.1, 0.1.2,....
   # >= igual ou superior a dada versão
 
-  # cobrado no momento da execução do bundle
-  s.add_runtime_dependency 'do-rails', '>= 0.0.9'
-  s.add_runtime_dependency 'basicss-rails', '>= 0.0.7'
+  # serão instaladas no bundle, porém, para serem usadas devem estar no Gemfile
+  s.add_runtime_dependency 'do_rails', '>= 0.0.3'
+  s.add_dependency 'basicss-rails', '>= 0.0.7'
 
 end
