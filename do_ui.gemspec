@@ -11,7 +11,10 @@ Gem::Specification.new do |s|
   s.summary     = "Summary of Do UI."
   s.description = "Description of Do UI."
   s.license     = "MIT"
+  s.test_files = Dir["test/*"]
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+
+  s.add_dependency 'coffee-rails'
 
 end
