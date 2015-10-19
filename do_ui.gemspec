@@ -13,7 +13,8 @@ Gem::Specification.new do |s|
   s.license     = "MIT"
   s.test_files = Dir["test/*"]
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{bin,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc", "do.gemspec"]
+  s.require_paths = ["bin","lib"]
 
   s.add_dependency 'coffee-rails'
 
