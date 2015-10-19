@@ -1,1 +1,1 @@
-# do_ui_rails
+# do-ui-rails
