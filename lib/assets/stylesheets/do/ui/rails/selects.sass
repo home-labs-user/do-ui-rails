@@ -1,14 +1,14 @@
-.custom-select
+.do-ui-select
   display: inline-block
 
-  .caption
+  .do-ui-caption-box
     border: 1px solid
     padding: 5px
     display: inline-block
 
     cursor: pointer
 
-    .text
+    .do-ui-caption-text
       white-space: nowrap
       overflow-x: hidden
       text-overflow: ellipsis
@@ -22,15 +22,15 @@
       margin-right: -4px
       text-align: center
 
-    &.retracted
+    &.do-ui-arrow-retracted
       &::after
         content: '▼'
 
-    &.expanded
+    &.do-ui-arrow-expanded
       &::after
         content: '▲'
 
-  .options-box
+  .do-ui-options-box
 
     display: none
     border: 1px solid
@@ -39,7 +39,7 @@
     position: absolute
     background: white
 
-    .search-box
+    .do-ui-search-box
       padding: 10px
 
     ul
