@@ -1,5 +1,5 @@
-module Do
-  module Ui
+module JTime
+  module UI
     module Rails
       class Engine < ::Rails::Engine
 

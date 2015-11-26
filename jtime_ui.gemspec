@@ -1,15 +1,15 @@
 $:.push File.expand_path("../lib", __FILE__)
 
-require "do/ui/rails/version"
+require "jtime/ui/rails/version"
 
 Gem::Specification.new do |s|
-  s.name        = "do-ui-rails"
-  s.version     = Do::Ui::Rails::VERSION
+  s.name        = "jtime-ui-rails"
+  s.version     = JTime::UI::Rails::VERSION
   s.authors     = ["Home Labs"]
   s.email       = ["home-labs@outlook.com"]
-  s.homepage    = "https://rubygems.org/gems/do_ui_rails"
-  s.summary     = "Summary of Do UI."
-  s.description = "Description of Do UI."
+  s.homepage    = "https://rubygems.org/gems/jtime_ui_rails"
+  s.summary     = "Summary of jTime UI."
+  s.description = "Description of jTime UI."
   s.license     = "MIT"
   s.test_files = Dir["test/**/*"]
 
@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.require_paths = %w{bin lib}
 
   s.add_dependency 'coffee-rails', "~> 4.1"
-  s.add_dependency 'do-rails', "~> 0.1"
+  s.add_dependency 'jtime-rails', "~> 0.0"
 
 end
