@@ -1,13 +1,13 @@
 $:.push File.expand_path("../lib", __FILE__)
 
-require "jtime/ui/rails/version"
+require "jtime/rails/ui/version"
 
 Gem::Specification.new do |s|
-  s.name        = "jtime-ui-rails"
-  s.version     = JTime::UI::Rails::VERSION
+  s.name        = "jtime-rails-ui"
+  s.version     = JTime::Rails::UI::VERSION
   s.authors     = ["Home Labs"]
   s.email       = ["home-labs@outlook.com"]
-  s.homepage    = "https://rubygems.org/gems/jtime_ui_rails"
+  s.homepage    = "https://rubygems.org/gems/jtime_rails_ui"
   s.summary     = "Summary of jTime UI."
   s.description = "Description of jTime UI."
   s.license     = "MIT"
