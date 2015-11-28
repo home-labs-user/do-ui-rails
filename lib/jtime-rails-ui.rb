@@ -1,1 +1,1 @@
-require "jtime/rails"
+require "jtime/rails/ui/engine"
