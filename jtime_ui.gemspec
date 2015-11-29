@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["home-labs@outlook.com"]
   s.homepage    = "https://rubygems.org/gems/jtime_rails_ui"
   s.summary     = "Summary of jTime UI."
-  s.description = "Description of jTime UI."
+  s.description = "User Interface Module to jTime."
   s.license     = "MIT"
   s.test_files = Dir["test/**/*"]
 
