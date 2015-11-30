@@ -22,28 +22,34 @@
     //z-index: 1
 
     .jtime-ui-modal-header
-      height: 17px
-      text-align: right
       padding: 5px
 
       .jtime-ui-modal-header-actions
 
-      a
-        color: #ccc
-        position: relative
-        top: -10px
+        display: inline-block
 
-        &.jtime-ui-modal-btn-close
+        a
+          color: #ccc
+
           font-weight: bold
-          font-size: 30px
-          right: -2px
+          font-size: 25px
 
-          &:before
-            content: "×"
+          &.jtime-ui-modal-btn-close
 
-          &:hover
-            cursor: pointer
-            color: #999
+            &:before
+              content: "×"
+
+          &.jtime-ui-modal-btn-hide
+            margin-left: 5px
+
+            &:before
+              content: "−"
+
+          &.jtime-ui-modal-btn-close,
+          &.jtime-ui-modal-btn-hide
+            &:hover
+              cursor: pointer
+              color: #999
 
     .jtime-ui-modal-content
       overflow: auto
