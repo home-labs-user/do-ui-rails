@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{bin,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc", "do_ui.gemspec"]
   s.require_paths = %w{bin lib}
 
-  s.add_dependency 'coffee-rails', "~> 4.1"
-  s.add_dependency 'jtime-rails', "~> 0.0"
+  s.add_dependency 'jquery-rails', "~> 4.0"
+  s.add_dependency 'jtime-rails', '~> 0.0'
 
 end
