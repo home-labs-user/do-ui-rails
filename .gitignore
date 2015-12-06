@@ -3,6 +3,6 @@ log/*.log
 pkg/
 
 *~
-Gemfile.lock
+/*.rb
+/.byebug_history
 *.gem
-test.rb
