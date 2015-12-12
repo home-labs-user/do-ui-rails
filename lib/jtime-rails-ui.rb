@@ -1,1 +1,1 @@
-require "jtime/rails/ui/engine"
+require "esphinx/rails/ui/engine"

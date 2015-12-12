@@ -1,4 +1,4 @@
-module JTime
+module ESphinx
   module Rails
     module UI
       class Engine < ::Rails::Engine
