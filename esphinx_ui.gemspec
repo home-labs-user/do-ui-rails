@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.license     = "MIT"
   s.test_files = Dir["test/**/*"]
 
-  s.files = Dir["{bin,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc", "do_ui.gemspec"]
+  s.files = Dir["{bin,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc", "esphinx_ui.gemspec"]
   s.require_paths = %w{bin lib}
 
   s.add_dependency 'jquery-rails', "~> 4.0"
