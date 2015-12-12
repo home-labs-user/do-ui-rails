@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.require_paths = %w{bin lib}
 
   s.add_dependency 'jquery-rails', "~> 4.0"
-  s.add_dependency 'esphinx-rails', '~> 0.0'
+  s.add_dependency 'esphinx-loader-rails', '~> 0.0'
 
 end
