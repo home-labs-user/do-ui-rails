@@ -1,55 +1,58 @@
-.esphinx-ui-wrapper-modal
-  position: absolute
-  top: 0
-  bottom: 0
-  left: 0
-  right: 0
+.esphinx
+  &.ui
 
-  .esphinx-ui-modal-mask
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    background-color: black
-    opacity: 0.3
+    &.modal
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
 
-  .esphinx-ui-modal
-    background: white
-    box-shadow: #707070 8px 8px 15px
-    min-width: 27px
-    position: absolute
-    //alterou a centralização da imagem oO
-    //z-index: 1
+      .mask
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background-color: black
+        opacity: 0.3
 
-    .esphinx-ui-modal-header
-      padding: 5px
+      main
+        background: white
+        box-shadow: #707070 8px 8px 15px
+        min-width: 27px
+        position: absolute
+        //alterou a centralização da imagem oO
+        //z-index: 1
 
-      .esphinx-ui-modal-header-actions
+        header
+          padding: 5px
 
-        display: inline-block
+          .actions
 
-        a
-          color: #ccc
+            display: inline-block
 
-          font-weight: bold
-          font-size: 25px
+            a
+              color: #ccc
+              font-weight: bold
+              font-size: 25px
+              text-decoration: none
 
-          &.esphinx-ui-modal-btn-close
+              &.btn-close
 
-            &:before
-              content: "×"
+                &:before
+                  content: "×"
 
-          &.esphinx-ui-modal-btn-hide
-            margin-left: 5px
+              &.btn-hide
+                margin-left: 5px
 
-            &:before
-              content: "−"
+                &:before
+                  content: "−"
 
-          &.esphinx-ui-modal-btn-close,
-          &.esphinx-ui-modal-btn-hide
-            &:hover
-              cursor: pointer
-              color: #999
+              &.btn-close,
+              &.btn-hide
+                &:hover
+                  cursor: pointer
+                  color: #999
 
-    .esphinx-ui-modal-content
-      overflow: auto
+        .container
+          overflow: auto
