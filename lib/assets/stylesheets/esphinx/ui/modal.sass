@@ -1,58 +1,57 @@
-.esphinx
-  &.ui
+.esphinx.ui
 
-    &.modal
-      position: absolute
+  &.modal
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+    .mask
       top: 0
       bottom: 0
       left: 0
       right: 0
+      background-color: black
+      opacity: 0.3
 
-      .mask
-        top: 0
-        bottom: 0
-        left: 0
-        right: 0
-        background-color: black
-        opacity: 0.3
+    main
+      background: white
+      box-shadow: #707070 8px 8px 15px
+      min-width: 27px
+      position: absolute
+      //alterou a centralização da imagem oO
+      //z-index: 1
 
-      main
-        background: white
-        box-shadow: #707070 8px 8px 15px
-        min-width: 27px
-        position: absolute
-        //alterou a centralização da imagem oO
-        //z-index: 1
+      header
+        padding: 5px
 
-        header
-          padding: 5px
+        .actions
 
-          .actions
+          display: inline-block
 
-            display: inline-block
+          a
+            color: #ccc
+            font-weight: bold
+            font-size: 25px
+            text-decoration: none
 
-            a
-              color: #ccc
-              font-weight: bold
-              font-size: 25px
-              text-decoration: none
+            &.btn-close
 
-              &.btn-close
+              &:before
+                content: "×"
 
-                &:before
-                  content: "×"
+            &.btn-hide
+              margin-left: 5px
 
-              &.btn-hide
-                margin-left: 5px
+              &:before
+                content: "−"
 
-                &:before
-                  content: "−"
+            &.btn-close,
+            &.btn-hide
+              &:hover
+                cursor: pointer
+                color: #999
 
-              &.btn-close,
-              &.btn-hide
-                &:hover
-                  cursor: pointer
-                  color: #999
-
-        .container
-          overflow: auto
+      .container
+        overflow: auto
