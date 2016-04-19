@@ -1,3 +1,6 @@
+@import mixins
+
+
 .esphinx.ui
 
   &.modal
@@ -17,7 +20,7 @@
 
     main
       background: white
-      box-shadow: #707070 8px 8px 15px
+      +box-shadow(gray, 3px, 3px, 2px)
       min-width: 27px
       position: absolute
       //alterou a centralização da imagem oO

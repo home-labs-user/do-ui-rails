@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.require_paths = %w{bin lib}
 
   # this is just for solve compatibility, but not to install gem
-  s.add_dependency 'esphinx-rails', '~> 0.1'
+  s.add_dependency 'esphinx-rails', '~> 0.1.2'
 
 end
