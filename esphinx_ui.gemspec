@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.authors     = ["Home Labs"]
   s.email       = ["home-labs@outlook.com"]
   s.homepage    = "https://rubygems.org/gems/esphinx-rails-ui"
-  s.summary     = "Summary of ESphinx UI."
-  s.description = "User Interface plugin to ESphinx."
+  s.summary     = %q{Summary of ESphinx UI.}
+  s.description = %q{User Interface plugin to ESphinx.}
   s.license     = "MIT"
-  s.test_files = Dir["test/**/*"]
+  s.test_files  = Dir["test/**/*"]
 
   s.files = Dir["{bin,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc", "esphinx_ui.gemspec"]
   s.require_paths = %w{bin lib}
