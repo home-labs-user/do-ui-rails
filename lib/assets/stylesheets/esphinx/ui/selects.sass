@@ -1,61 +1,62 @@
-.esphinx-ui-select
-  display: inline-block
-
-  .esphinx-ui-caption-box
-    border: 1px solid
-    padding: 5px
+.esphinx.ui
+  &.select
     display: inline-block
 
-    cursor: pointer
-
-    .esphinx-ui-caption-text
-      white-space: nowrap
-      overflow-x: hidden
-      text-overflow: ellipsis
-
+    .caption-box
+      border: 1px solid
+      padding: 5px
       display: inline-block
-      margin-right: 6px
 
-    &::after
-      vertical-align: top
-      display: inline-block
-      margin-right: -4px
-      text-align: center
+      cursor: pointer
 
-    &.esphinx-ui-arrow-retracted
-      &::after
-        content: '▼'
-
-    &.esphinx-ui-arrow-expanded
-      &::after
-        content: '▲'
-
-  .esphinx-ui-options-box
-
-    display: none
-    border: 1px solid
-    margin-top: -1px
-
-    position: absolute
-    background: white
-
-    .esphinx-ui-search-box
-      padding: 10px
-
-    ul
-      overflow-y: auto
-
-      background: white
-
-      list-style: none
-      padding: 0
-      margin: 0
-
-      li
-        cursor: pointer
-
+      .caption-text
         white-space: nowrap
         overflow-x: hidden
         text-overflow: ellipsis
 
-        padding: 3px 10px
+        display: inline-block
+        margin-right: 6px
+
+      &::after
+        vertical-align: top
+        display: inline-block
+        margin-right: -4px
+        text-align: center
+
+      &.arrow-retracted
+        &::after
+          content: '▼'
+
+      &.arrow-expanded
+        &::after
+          content: '▲'
+
+    .options-box
+
+      display: none
+      border: 1px solid
+      margin-top: -1px
+
+      position: absolute
+      background: white
+
+      .search-box
+        padding: 10px
+
+      ul
+        overflow-y: auto
+
+        background: white
+
+        list-style: none
+        padding: 0
+        margin: 0
+
+        li
+          cursor: pointer
+
+          white-space: nowrap
+          overflow-x: hidden
+          text-overflow: ellipsis
+
+          padding: 3px 10px
