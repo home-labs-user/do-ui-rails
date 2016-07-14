@@ -32,16 +32,13 @@
           content: '▲'
 
     .options-panel
-
       display: none
       border: 1px solid
       margin-top: -1px
+      padding: 10px
 
       position: absolute
       background: white
-
-      .search-box
-        padding: 10px
 
       ul
         overflow-y: auto
@@ -59,4 +56,9 @@
           overflow-x: hidden
           text-overflow: ellipsis
 
-          padding: 3px 10px
+          padding: 3px 0
+
+        &.list-built-found
+          li
+            &:first-of-type
+              padding-top: 9px
