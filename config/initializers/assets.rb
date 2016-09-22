@@ -1,1 +1,2 @@
-Rails.application.config.assets.precompile += %w( esphinx_ui.css esphinx_ui.js )
+Rails.application.config.assets.precompile += %w( esphinx/ui.css esphinx/ui.js )
+
