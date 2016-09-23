@@ -13,8 +13,8 @@ Gem::Specification.new do |s|
   s.license     = "MIT"
   s.test_files  = Dir["test/**/*"]
 
-  s.files = Dir["{bin,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc", "esphinx_ui.gemspec"]
-  s.require_paths = %w{bin lib}
+  s.files = Dir["{bin,config,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md", "esphinx_ui.gemspec"]
+  s.require_paths = %w{lib vendor}
 
   # this is just for solve compatibility, but not to install gem
   s.add_dependency 'esphinx-rails', '~> 0.2'
