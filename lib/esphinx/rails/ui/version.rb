@@ -1,7 +1,7 @@
 module ESphinx
   module Rails
     module UI
-      VERSION = "0.2.5"
+      VERSION = "0.2.6"
     end
   end
 end
